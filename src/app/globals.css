@@ -117,21 +117,21 @@ h2 {
 
 /* Hamburger menu (mobile) */
 .hamburger {
-  display: none; /* shown only on mobile */
+  display: none;
   background: transparent;
   border: none;
-  width: 36px;
-  height: 36px;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
   cursor: pointer;
+  z-index: 1001;
 }
+
 .hamburger span {
   display: block;
-  height: 3px;
-  background: var(--text-dark);
-  border-radius: 2px;
+  width: 25px;   
+  height: 3px;   
+  background-color: var(--text-dark); 
+  margin: 5px 0; 
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* --- Hero Section --- */
@@ -408,8 +408,7 @@ h2 {
     }
     /* Show hamburger and hide nav links by default on small screens */
     .hamburger {
-      display: flex;
-      align-items: center;
+      display: block;
     }
     .navLinks {
       display: none;
